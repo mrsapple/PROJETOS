@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+}
+
+.login{
+    font-size: 20px;
+    color: #ba8db7;
+}
+body{
+    background: #ba8db7;
+}
+.container{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 600px;
+    margin: 30px auto 0;
+    display: block;
+    background: #fff;
+    padding: 10px 50px 50px;
+}
+.grupo{
+    position: relative;
+    margin-bottom: 45px;
+}
+input{
+    font-size: 14px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 300px;
+    border: none;
+    border-bottom: 1px solid #6c3f6e;
+}
+input:focus{
+    outline: none;
+}
+.classe2:before{
+    left: 50%;
+}
+.classe2:after{
+    right: 50%;
+}
+input:focus~.classe2:before, input:focus~.classe2:after{
+    width: 50%;
+}
+.classe1{
+    position: absolute;
+    height: 60px;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+input:focus~.classe1{
+    -webkit-animation: inputHighlighter 0.3s ease;
+    -moz-animation: inputHighlighter 0.3s ease;
+    animation: inputHighlighter 0.3s ease;
+}
+label{
+    color: #999;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+input:focus~label, input:valid~label{
+    top: -10px;
+    font-size: 14px;
+    color: #6c3f6e;
+}
+.classe2{
+    position: relative;
+    display: block;
+    width: 300px;
+}
+.classe2:before, .classe2:after{
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #6c3f6e;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+@-webkit-keyframes inputHighlighter{
+    from{
+        background: #6c3f6e;
+    }
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+@-webkit-keyframes inputHighlighter{
+    from {
+        background: #6c3f6e;
+    }
+    to{
+        width: 0;
+        background: transparent;
+    }
+} 
+@keyframes inputHighlighter{
+    from{
+        background: #6c3f6e;
+    }
+    to{
+        width: 0;
+        background: transparent;
+    }
+}
+figure{
+    position: absolute;
+    right: 360px;
+    top: 20px;
+}
+button{
+    background-color: #ba8db7;
+    border: none;
+    color: #fff;
+    width: 60px;
+    height: 30px;
+    border-radius: 5%;
+    box-shadow: 0px 0px 1px 1px #6c3f6e;
+}
+button:hover {
+    background-color: #6c3f6e;
+    transition: 0.7s;
+}
