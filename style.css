@@ -127,7 +127,7 @@ figure{
 }
 .t1:hover{
     background-color: #5e415a;
-    /* transition: 0.5s ease all; */
     color: whitesmoke;
     cursor: pointer;
+    border: #000 1px solid;
 }
